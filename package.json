@@ -12,9 +12,9 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
-    "dev": "ts-node-dev --respawn --clear --transpile-only --ignore-watch node_modules ./src/app.ts",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules ./src/app.ts",
     "build": "rimraf ./dist && tsc",
-    "start": "ts-node --clear src/app.ts"
+    "start": "ts-node src/app.ts"
   },
   "author": "Hari Setiawan",
   "license": "ISC",
@@ -43,6 +43,7 @@
     "dotenv": "^16.4.5",
     "env-var": "^7.5.0",
     "express": "^4.19.2",
-    "express-rate-limit": "^7.2.0"
+    "express-rate-limit": "^7.2.0",
+    "sequelize": "^6.37.3"
   }
 }

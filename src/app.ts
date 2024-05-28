@@ -7,7 +7,7 @@ import { Server } from './server';
 
 function main(): void {
   const server = new Server({
-    port: envs.PORT
+    port: envs.NODE_DOCKER_PORT
   });
   void server.start();
 }
